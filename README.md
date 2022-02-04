@@ -25,6 +25,7 @@ $ npm install --save story-wc-generator
 
 ## Usage
 
+_**stories/cool-button.stories.ts**_
 ```ts
 import notes from '../../components/cool-button/readme.md';
 import storyGenerator from 'story-wc-generator';
@@ -61,7 +62,14 @@ Secondary.args = {
 
 ## Parameters
 
-The function receives an object with this structure
+|  Parameter   |              Description               |
+|--------------|----------------------------------------|
+| componentTag | Tag of the component                   |
+| params       | Object with more parameters(see below) |
+
+
+### Params
+The object will have this structure
 ```ts
 {
   propName: {
